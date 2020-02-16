@@ -1,0 +1,14 @@
+{
+    "spellright.language": [
+        "en"
+    ],
+    "spellright.documentTypes": [
+        "plaintext",
+        "markdown",
+        "latex",
+        "jade",
+        "pug",
+        "css",
+        "php"
+    ]
+}
