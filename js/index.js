@@ -43,6 +43,7 @@ const siteContent = {
 };
 
 // Navigation
+// Change to Green Text
 
 let navList = document.querySelectorAll('nav a');
 let navItems = siteContent.nav;
@@ -51,7 +52,21 @@ navList.forEach((item, i) => {
 	let itemName = `nav-item-${i + 1}`;
 	// console.log(itemName);
 	item.textContent = navItems[itemName];
+	item.style.color = 'green';
 });
+
+// Add 2 New Nav Items
+let loginNav = document.createElement('a');
+document.querySelector('nav').prepend(loginNav);
+loginNav.textContent = 'Login';
+loginNav.setAttribute('href', '#');
+loginNav.style.color = 'green';
+
+let portfolioNav = document.createElement('a');
+document.querySelector('nav').appendChild(portfolioNav);
+portfolioNav.textContent = 'Portfolio';
+portfolioNav.setAttribute('href', '#');
+portfolioNav.style.color = 'green';
 
 //Logo
 
